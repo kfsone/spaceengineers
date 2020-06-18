@@ -1,0 +1,23 @@
+﻿ArmChurn v0.0.0.0-r0-build0-more0.
+
+This script will drill out a large volume using a small number of drills attached via arms - pistons - to a shaft, the shaft is a piston attached to a rotor/advanced rotor.
+
+The default behavior is this: First it rotates to drill a circumference; then it extends the shaft; then it retracts and extends the arms and starts over.
+
+For each component of the system, it looks for either a group or blocks with a specific name. These are (including '*'): *Rotors, *Shaft, *Arms, *Drills.
+
+You can customize these and other settings through the Custom Data text, options and defaults as follows:
+
+	rotors=*Rotors
+	shafts=*Shaft
+	arms=*Arms
+	drills=*Drills
+
+	rotation=360.0
+	rotors_dps=2.0
+
+	shaft_step=0.5
+	shaft_mps=0.2
+
+	arms_step=0.5
+	arms_rps=0.2
