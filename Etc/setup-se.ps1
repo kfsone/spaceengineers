@@ -63,7 +63,7 @@ Write-Output "Fetching game"
 & $SteamCmd +login anonymous +force_install_dir $InstallPath +app_update $SteamAppID +quit
 
 # The game should be here:
-$ServerPath = Join-Path $installpath steamapps/common/spaceenginersdedicatedserver/dedicatedserver64
+$ServerPath = Join-Path $installpath steamapps/common/SpaceEngineersDedicatedServer/DedicatedServer64
 $ServerExe = Join-Path $ServerPath SpaceEngineersDedicated.exe
 if (!(Test-Path $ServerExe)) {
 	Write-Error "Seem to be missing $ServerExe"
