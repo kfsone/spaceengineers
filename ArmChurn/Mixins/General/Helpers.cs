@@ -8,6 +8,20 @@ namespace IngameScript
 {
     public partial class Program : MyGridProgram
     {
+        public double WrapDiff(double before, double current, double wrap)
+        {
+            var midpoint = wrap / 2;
+            return (current - before + midpoint + wrap) % wrap - midpoint;
+        }
+
+        public double RadianDiff(float before, float after) => WrapDiff((double)before, (double)after, Math.PI * 2.0);
+
+        public float AngleDiff(float before, float after) => (float)WrapDiff((double)before, (double)after, 360.0);
+
+        public float RadiansToDegrees(float radians) => radians * 180.0f / (float)Math.PI;
+
+        public float DegreesToRadians(float degrees) => degrees / 180.0f * (float)Math.PI;
+
         public int GetBlocksOrGroup<T>(string name, List<T> into)
             where T : class, IMyTerminalBlock
         {

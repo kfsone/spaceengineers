@@ -9,10 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mixins", "Mixins", "{65E94A
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "General", "..\Mixins\General\General.shproj", "{61EBA249-19F3-48B6-A25B-A4CEE90168BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotatingDerrick", "..\RotatingDerrick\RotatingDerrick\RotatingDerrick.csproj", "{DCD65F16-019A-4FEE-AAF7-CEE28F07FFE9}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\Mixins\General\General.projitems*{2415da3a-9965-4b71-b727-0dd43f779e24}*SharedItemsImports = 4
 		..\Mixins\General\General.projitems*{61eba249-19f3-48b6-a25b-a4cee90168ba}*SharedItemsImports = 13
+		..\Mixins\General\General.projitems*{dcd65f16-019a-4fee-aaf7-cee28f07ffe9}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -20,6 +23,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2415DA3A-9965-4B71-B727-0DD43F779E24}.Debug|x64.ActiveCfg = Debug|x64
 		{2415DA3A-9965-4B71-B727-0DD43F779E24}.Debug|x64.Build.0 = Debug|x64
+		{DCD65F16-019A-4FEE-AAF7-CEE28F07FFE9}.Debug|x64.ActiveCfg = Debug|x64
+		{DCD65F16-019A-4FEE-AAF7-CEE28F07FFE9}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

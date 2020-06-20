@@ -216,7 +216,7 @@ stagger=0
             List<float> travelled = new List<float>();
 
             const float min_rate = 0.0001f;
-            float rotation = Math.Abs(config_.AsFloat("rotation"));
+            float rotation = RadiansToDegrees(Math.Abs(config_.AsFloat("rotation")));
             float rate_dps = Math.Max(Math.Min(Math.Abs(config_.AsFloat("rotors_dps")), 30.0f), min_rate);
             int stagger = config_.AsInt("stagger");
             if (stagger < 3) stagger = -1;

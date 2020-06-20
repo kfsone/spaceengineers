@@ -1,0 +1,23 @@
+﻿Drives a 'derrick' comprising a group of drills at the end of a series of one or more pistons attached to a rotor.
+
+Fully configurable via the Custom Data:
+
+The derrick will rotate for "rotate_for" degrees and then extend one of the pistons by "descent_step" meters, then rotate in the opposite direction.
+
+Rotation speed is controlled by "rotate_rpm" and piston extension by "descent_rate".
+
+You can specify the name of a drill or group of drills with "drills";
+Specify the piston(s) with "pistons";
+And the rotor is specified by "rotors".
+
+Defaults:
+
+drills=Mining Drills
+pistons=Mining Pistons
+rotors=Mining Rotors
+
+rotate_for=360
+rotate_rpm=0.6
+
+descent_step=0.5
+descent_rate=0.1
